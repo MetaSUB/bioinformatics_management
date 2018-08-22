@@ -1,5 +1,14 @@
 # Bioinformatics at MetaSUB
 
+This document outlines the state of Bioinformatics at MetaSUB following the 2018 MetaSUB meeting in Brazil. It is largely based off of the discussion at the bioinformatics round table. 
+
+At the round table many expressed interest in listing all MetaSUB-Bioinformatics resources, projects, and policies in a single place. This document addresses all of these topics and this repo provides a centralized point for management and discussion.
+
+MetaSUB is a peer led organization. Everyone should feel free to ask questions, make suggestions, and contribute. The best way to start a discussion (if your topic does not relate to a specific codebase) is to use a GitHub Issue.
+
+Thank you,
+David Danko 
+
 ## Code Availability
 
 We use a number of programs for bioinformatics at MetaSUB. All code is available on GitHub. Everyone in MetaSUB is welcome to contribute to any relevant codebase including filing issues.
@@ -91,3 +100,12 @@ To avoid collisions each source file is stored with a name in this format `<huds
 For convenience the `hudson_alpha_library` directory is subdivided into directories for hudson alpha projects which are themselves divided into directories for flowcells. As such the complete path for a given file looks like this `hudson_alpha_library/haib18CEM5453/HMC2KCCXY/haib18CEM5453_HMC2KCCXY_SL336821.fastq.gz`.
 
 Source files from the same sample are never concatenated in the standard processing pipeline. This is because 1) such instances are rare, 2) technical replicates provide useful quality control, 3) managing such events is likely to lead to larger issues with organization. Of course custom analyses may concatenate as they see fit.
+
+## Potential Projects
+
+We discussed several potential projects at the MetaSUB meeting
+- Sandboxes to facilitate data analysis
+- Kmer countign in the CAP (in progress)
+- Batch Normalization of Samples
+- Sequence search against MetaSUB data (in progress by Andre Kahles)
+- Uncertainty in taxonomic Assignments
