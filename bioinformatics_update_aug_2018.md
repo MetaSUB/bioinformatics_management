@@ -4,32 +4,69 @@
 
 We use a number of programs for bioinformatics at MetaSUB. All code is available on GitHub. Everyone in MetaSUB is welcome to contribute to any relevant codebase including filing issues.
 
-Except for Figure Generation all code is public.
+Except for Figure Generation (which includes some unpublished data) all code is public.
 
 ### Data Analysis
 
 [The Core Analysis Pipeline](https://github.com/MetaSUB/MetaSUB_CAP)
+
 [The Core QC Pipeline](https://github.com/MetaSUB/MetaSUB_QC_Pipeline)
+
 [The Core Assembly Pipeline (WIP)](https://github.com/MetaSUB/MetaSUB_assembly_CAP)
+
 [Data Table Generator](https://github.com/dcdanko/capalyzer)
+
 [Figure Generators (private, contains unpublished data, ask for access)](https://github.com/dcdanko/metasub-packetizer)
+
 [Macrobial Abundance Estimation](https://github.com/MetaSUB/macrobial-genomes)
 
 ### Utilities
 
 [Bioinformatics Management, Policies, and Communications](https://github.com/MetaSUB/bioinformatics_management)
+
 [Uncategorized Utility Scripts](https://github.com/MetaSUB/metasub_utils)
+
 [Metadata Clean Up and Collation](https://github.com/dcdanko/MetaSUB-metadata)
+
 [Pipeline Compiler (ModuleUltra)](https://github.com/dcdanko/ModuleUltra)
+
 [Pipeline Organization and Structure (DataSuper)](https://github.com/dcdanko/DataSuper)
+
 [Abandoned Package Manager for Biological Data (PackageMega)](https://github.com/dcdanko/PackageMega)
 
+## Data Analysis
 
-## How the data is stored
+### The Core Analysis Pipeline
 
-### Data Availability and Storage
-TODO
+The Core Analysis Pipeline is being run on all MetaSUB samples at Weill Cornell Medical. Due to the complexity of this pipeline it is not feasible to split computation across multiple sites. Results will be made directly available as soon as possible.
 
+### Assemblies
+
+Assembly of MetaSUB data is being performed using the XSEDE Project's supercomputing resources. The intention is to assemble all MetaSUB samples using MetaSPAdes. No quality control is performed before assembling reads.
+
+Additional compute resources for assembly are welcome. Please contact David Danko to coordinate.
+
+## Data Availability and Storage
+
+### SFTP Server
+
+Andre Kahles currently maintains an SFTP server at ETH Zurich. We are working to update this server to 
+- [ ] include analyzed MetaSUB data
+- [ ] include human-free data
+- [ ] include assembled contigs
+- [ ] match the file structure outlined below
+
+Please contact Andre Kahles for a username and password.
+
+### MetaGenScope
+
+[MetaGenScope](www.metagenscope.com) is available for automated visualization MetaSUB data. It is possible to create arbitrary sample groups. Please contact David Danko for access and questions.
+
+### Making Data Public
+
+There are no plans to make the data publicly available until after the consortium has published a manuscript. Any data published will have human sequence scrubbed. 
+
+## How the Data is Stored
 
 ### File and Naming Structure
 
