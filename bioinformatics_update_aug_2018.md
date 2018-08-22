@@ -17,6 +17,7 @@ Except for Figure Generation all code is public.
 
 ### Utilities
 
+[Bioinformatics Management, Policies, and Communications](https://github.com/MetaSUB/bioinformatics_management)
 [Uncategorized Utility Scripts](https://github.com/MetaSUB/metasub_utils)
 [Metadata Clean Up and Collation](https://github.com/dcdanko/MetaSUB-metadata)
 [Pipeline Compiler (ModuleUltra)](https://github.com/dcdanko/ModuleUltra)
@@ -24,11 +25,10 @@ Except for Figure Generation all code is public.
 [Abandoned Package Manager for Biological Data (PackageMega)](https://github.com/dcdanko/PackageMega)
 
 
-
 ## How the data is stored
 
 ### Data Availability and Storage
-pp
+TODO
 
 
 ### File and Naming Structure
