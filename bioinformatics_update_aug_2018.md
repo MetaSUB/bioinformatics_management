@@ -59,13 +59,20 @@ Additional compute resources for assembly are welcome. Please contact David Dank
 
 ### SFTP Server
 
-Andre Kahles currently maintains an SFTP server at ETH Zurich. We are working to update this server to 
-- [ ] include analyzed MetaSUB data
-- [ ] include human-free data
-- [ ] include assembled contigs
-- [ ] match the file structure outlined below
+Andre Kahles currently maintains an SFTP server at ETH Zurich. We are transitioning this server to only include raw sequence data matching the format specified below.
 
 Please contact Andre Kahles for a username and password.
+
+### Wasabi Cloud Storage
+
+We are storing the MetaSUB data on Wasabi Storage, a service that is functionally identical to Amazon S3. We have a single bucket on Wasabi that contains:
+
+- Raw Sequence Data
+- CAP Outputs
+- Assemblies
+- Data Packet
+
+A number of utility scripts exist to download data from this service. Please contact David Danko for login information.
 
 ### MetaGenScope
 
