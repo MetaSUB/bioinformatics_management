@@ -9,6 +9,15 @@ MetaSUB is a peer led organization. Everyone should feel free to ask questions, 
 Thank you,
 David Danko 
 
+## State of Sequenced Data
+
+1,165 pathomap samples have been assembled
+1,523 metasub samples have been assembled
+2,141 metasub samples have been fully analyzed using the CAP
+3,442 metasub samples have been sequenced
+5,012 metasub+pathomap samples have been sequenced
+55 cities have confirmed samples
+
 ## Code Availability
 
 We use a number of programs for bioinformatics at MetaSUB. All code is available on GitHub. Everyone in MetaSUB is welcome to contribute to any relevant codebase including filing issues.
