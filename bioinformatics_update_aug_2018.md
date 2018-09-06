@@ -11,12 +11,12 @@ David Danko
 
 ## State of Sequenced Data
 
-1,165 pathomap samples have been assembled
-1,523 metasub samples have been assembled
-2,141 metasub samples have been fully analyzed using the CAP
-3,442 metasub samples have been sequenced
-5,012 metasub+pathomap samples have been sequenced
-55 cities have confirmed samples
+- 1,165 pathomap samples have been assembled
+- 1,523 metasub samples have been assembled
+- 2,141 metasub samples have been fully analyzed using the CAP
+- 3,442 metasub samples have been sequenced
+- 5,012 metasub+pathomap samples have been sequenced
+- 55 cities have confirmed samples
 
 ## Code Availability
 
