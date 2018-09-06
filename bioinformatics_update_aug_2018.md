@@ -45,6 +45,9 @@ Except for Figure Generation (which includes some unpublished data) all code is 
 
 ## Data Analysis
 
+### Metadata and Sequenced Sample Counts by City
+
+Please see the Metadata repo for an in depth explanation of metadata [Metadata Collation](https://github.com/dcdanko/MetaSUB-metadata)
 ### The Core Analysis Pipeline
 
 The Core Analysis Pipeline is being run on all MetaSUB samples at Weill Cornell Medical. Due to the complexity of this pipeline it is not feasible to split computation across multiple sites. Results will be made directly available as soon as possible.
