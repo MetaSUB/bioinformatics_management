@@ -9,6 +9,15 @@ MetaSUB is a peer led organization. Everyone should feel free to ask questions, 
 Thank you,
 David Danko 
 
+## State of Sequenced Data
+
+- 1,165 pathomap samples have been assembled
+- 1,523 metasub samples have been assembled
+- 2,141 metasub samples have been fully analyzed using the CAP
+- 3,442 metasub samples have been sequenced
+- 5,012 metasub+pathomap samples have been sequenced
+- 55 cities have confirmed samples
+
 ## Code Availability
 
 We use a number of programs for bioinformatics at MetaSUB. All code is available on GitHub. Everyone in MetaSUB is welcome to contribute to any relevant codebase including filing issues.
@@ -45,6 +54,9 @@ Except for Figure Generation (which includes some unpublished data) all code is 
 
 ## Data Analysis
 
+### Metadata and Sequenced Sample Counts by City
+
+Please see the Metadata repo for an in depth explanation of metadata [Metadata Collation](https://github.com/dcdanko/MetaSUB-metadata)
 ### The Core Analysis Pipeline
 
 The Core Analysis Pipeline is being run on all MetaSUB samples at Weill Cornell Medical. Due to the complexity of this pipeline it is not feasible to split computation across multiple sites. Results will be made directly available as soon as possible.
