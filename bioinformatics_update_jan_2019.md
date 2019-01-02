@@ -6,7 +6,7 @@ A record of new bioinformatics tools and features for MetaSUB.
 
 ### v1.0.1 Metadata for Sequenced Samples
 
-We have a v1.0.1 metadata table for all sequenced samples. This table includes, at a minimum, city of origin and project for 4,495 samples*. Typically far more metadata is available in this table.
+We have a [v1.0.1 metadata table](https://github.com/MetaSUB/MetaSUB-metadata) for all sequenced samples. This table includes, at a minimum, city of origin and project for 4,495 samples*. Typically far more metadata is available in this table.
 
 This table represents the v1.0.0 MetaSUB data freeze. 
 
@@ -14,11 +14,11 @@ This table represents the v1.0.0 MetaSUB data freeze.
 
 ### v1.0.0 Data Packet
 
-We have collated the results of the CAP into a set of data tables for the v1.0.0 data release. This packet is available on Dropbox and GitHub (private repo) and includes a detailed README
+We have collated the results of the CAP into a set of data tables for the v1.0.0 data release. This packet is available on Dropbox and GitHub (private repo) and includes a detailed README. Contact David Danko or Chris Mason for access.
 
 ### All Sequenced Data on Wasabi Hot Storage
 
-All sequenced data is available for download from Wasabi Hot Storage (an S3 clone). See [the utilities](https://github.com/MetaSUB/metasub_utils) and [this file](https://github.com/MetaSUB/bioinformatics_management/blob/master/data_storage.md) for more information.
+All sequenced data is available for download from [Wasabi Hot Storage](https://wasabi.com/). See [the utilities](https://github.com/MetaSUB/metasub_utils) and [this file](https://github.com/MetaSUB/bioinformatics_management/blob/master/data_storage.md) for more information.
 
 Some members of the consortium have expressed interest in maintaining an SFTP mirror. We are exploring this possibility.
 
@@ -31,11 +31,11 @@ The [MetaSUB Utilities Repo](https://github.com/MetaSUB/metasub_utils) has been 
 
 ### Installing the CAP
 
-Installing the CAP is getting easier. Several of the most problematic dependencies for the CAP (ModuleUltra, DataSuper) have been updated. We're continuing to work on ways to make the CAP easier to use.
+Installing the [CAP](https://github.com/MetaSUB/MetaSUB_CAP) is getting easier. Several of the most problematic dependencies for the CAP (ModuleUltra, DataSuper) have been updated. We're continuing to work on ways to make the CAP easier to use.
 
 ### MetaGenScope
 
-City specific pages on MetaGenScope have been updated with new data and metadata.
+City specific pages on [MetaGenScope](https://www.metagenscope.com/) have been updated with new data and metadata.
 
 MetaGenScope will be receiving a facelift in January and there may be brief outages.
 
