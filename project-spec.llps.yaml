@@ -1,0 +1,11 @@
+project: MetaSUB
+project_description: 'A global consortium to understand bacteria in the subways of the world'
+version: v1.0.0
+spec_version: v0.1.0
+sources:
+  wasabi:
+    file_schema: {}
+    endpoint_url: 'https://s3.wasabisys.com'
+    bucket_name: 's3://metasub'
+files:
+  - {md5: none, path: 'assemblies/hudson_alpha_library/haib17CEM4890/H2NYMCCXY/haib17CEM4890_H2NYMCCXY_SL254769.metaspades/contigs.fasta'}
