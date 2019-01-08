@@ -8,4 +8,4 @@ sources:
     endpoint_url: 'https://s3.wasabisys.com'
     bucket_name: 's3://metasub'
 files:
-  - {md5: none, path: 'assemblies/hudson_alpha_library/haib17CEM4890/H2NYMCCXY/haib17CEM4890_H2NYMCCXY_SL254769.metaspades/contigs.fasta'}
+  - {md5: none, wasabi: {}, path: 'assemblies/hudson_alpha_library/haib17CEM4890/H2NYMCCXY/haib17CEM4890_H2NYMCCXY_SL254769.metaspades/contigs.fasta'}
