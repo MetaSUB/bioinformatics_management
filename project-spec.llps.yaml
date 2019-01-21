@@ -4714,14 +4714,6 @@ files:
   unzipped_line_count: 139913852
   md5: fK3WynwB7pQQWqIAUqqyRg==
   wasabi: {}
-- path: data/hudson_alpha_library/haib17CEM4890/HMCMJCCXY/HMCMJCCXY_s4_1_BC_X.fastq.gz
-  unzipped_line_count: 66364212
-  md5: hIT+O6mrj9pe+z1KC+j1DQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17CEM4890/HMCMJCCXY/HMCMJCCXY_s4_2_BC_X.fastq.gz
-  unzipped_line_count: 66364212
-  md5: 9ae7JCT/2tobv/plUdP+JA==
-  wasabi: {}
 - path: data/hudson_alpha_library/haib17CEM4890/HMCMJCCXY/haib17CEM4890_HMCMJCCXY_SL335772_1.fastq.gz
   unzipped_line_count: 18280212
   md5: jd/IqclD48ine6VyGQerbQ==
@@ -29906,14 +29898,6 @@ files:
   unzipped_line_count: 9680
   md5: pAokDvS244Ev6NHuvKxPng==
   wasabi: {}
-- path: data/hudson_alpha_library/haib18CEM5526/HMGTJCCXY/HMGTJCCXY_s4_1_BC_X.fastq.gz
-  unzipped_line_count: 24811916
-  md5: bA4QP+ojBD4uhGhibDMPSA==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib18CEM5526/HMGTJCCXY/HMGTJCCXY_s4_2_BC_X.fastq.gz
-  unzipped_line_count: 24811916
-  md5: 0edPedcqEqDrK3Rovq9TCA==
-  wasabi: {}
 - path: data/hudson_alpha_library/haib18CEM5526/HMGTJCCXY/haib18CEM5526_HMGTJCCXY_SL342610_1.fastq.gz
   unzipped_line_count: 13150532
   md5: pAnsM+7L5FVtnRK0DjiKkA==
@@ -31602,30 +31586,6 @@ files:
   unzipped_line_count: 25695508
   md5: LoTw80fiz7pMqI7dzMvw8Q==
   wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259953_1.fastq.gz
-  unzipped_line_count: 23974128
-  md5: 6VrFblV/QRRLJYlfVQ6L5Q==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259953_2.fastq.gz
-  unzipped_line_count: 23974128
-  md5: BKOPf2WW379qOZnDYf72lg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259954_1.fastq.gz
-  unzipped_line_count: 20795836
-  md5: bcq7qffPK6HgGOwgxxLA6Q==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259954_2.fastq.gz
-  unzipped_line_count: 20795836
-  md5: 68xaA6524sJEC1hk0+bzyQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259955_1.fastq.gz
-  unzipped_line_count: 32784644
-  md5: 9buKMZP/plC7K4jf7HORSg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259955_2.fastq.gz
-  unzipped_line_count: 32784644
-  md5: f9hd3DrUiYkDROZqeqPmQQ==
-  wasabi: {}
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259956_1.fastq.gz
   unzipped_line_count: 10556372
   md5: cMXxIIpg7bjLq77/7NM1WQ==
@@ -31665,38 +31625,6 @@ files:
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259960_2.fastq.gz
   unzipped_line_count: 14093844
   md5: SYieFGZqbdExaIeYJgfmTg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259961_1.fastq.gz
-  unzipped_line_count: 15059176
-  md5: xLWoOECE2oATCkCH1xuHVw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259961_2.fastq.gz
-  unzipped_line_count: 15059176
-  md5: QvDiTxswVBBodhWuug0N5w==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259962_1.fastq.gz
-  unzipped_line_count: 11321752
-  md5: WAEbjLpTW5I8DaAa3Jf4Mg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259962_2.fastq.gz
-  unzipped_line_count: 11321752
-  md5: WcGubVi3Ot1oNOPHjmYIcw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259963_1.fastq.gz
-  unzipped_line_count: 32489052
-  md5: tX3bGHHf5QYlprtfPTxsmg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259963_2.fastq.gz
-  unzipped_line_count: 32489052
-  md5: Ir/3fO6z6AXIRR8EPmp5/g==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259964_1.fastq.gz
-  unzipped_line_count: 35518280
-  md5: akJ53roqdvhduO8KbrscYA==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259964_2.fastq.gz
-  unzipped_line_count: 35518280
-  md5: vZhKWtX0GsPHdZyNogrwkQ==
   wasabi: {}
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259965_1.fastq.gz
   unzipped_line_count: 37555356
@@ -31738,38 +31666,6 @@ files:
   unzipped_line_count: 21094336
   md5: 78ISIhW2EGVlFE01Vl2mMg==
   wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259970_1.fastq.gz
-  unzipped_line_count: 21283948
-  md5: ony5tVGzbMuwRY/tqDqVvQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259970_2.fastq.gz
-  unzipped_line_count: 21283948
-  md5: Krcwn3Ea+9Oe/6+XYWXKHw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259971_1.fastq.gz
-  unzipped_line_count: 15825776
-  md5: 1ohkUoNqGNSnjgNkmHvjHg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259971_2.fastq.gz
-  unzipped_line_count: 15825776
-  md5: 7CSy1sMuIT7zOT9GH9F+Kw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259972_1.fastq.gz
-  unzipped_line_count: 62360
-  md5: lk/xJZ3FJEEvmQjc6d3Cqw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259972_2.fastq.gz
-  unzipped_line_count: 62360
-  md5: NlNqwjD/k9OdVEA+3d6Fiw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259973_1.fastq.gz
-  unzipped_line_count: 39561628
-  md5: k8pILsNawPE9ohxnjjcCxQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259973_2.fastq.gz
-  unzipped_line_count: 39561628
-  md5: DmWDmwbHB8olZkyecGTFzQ==
-  wasabi: {}
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259974_1.fastq.gz
   unzipped_line_count: 48705824
   md5: OP12ivWUlNmUVx9cjyAYqg==
@@ -31810,38 +31706,6 @@ files:
   unzipped_line_count: 5628108
   md5: 8J4HxAgFDdmH6BRAqC67rQ==
   wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259979_1.fastq.gz
-  unzipped_line_count: 16070752
-  md5: NJRNlTv6SFlJfIHBwBrGFA==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259979_2.fastq.gz
-  unzipped_line_count: 16070752
-  md5: abRGMIEBSVc7lHGPD0FPsQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259980_1.fastq.gz
-  unzipped_line_count: 10802004
-  md5: pFzsyEFJK8vlkT7tM2z52Q==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259980_2.fastq.gz
-  unzipped_line_count: 10802004
-  md5: JJoLH34pw8Mi/p1dY09kEQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259981_1.fastq.gz
-  unzipped_line_count: 33933340
-  md5: dQ68HsvWIbVsvdLlp9KwdQ==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259981_2.fastq.gz
-  unzipped_line_count: 33933340
-  md5: IyBxyzEqaF640dhRovzPKw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259982_1.fastq.gz
-  unzipped_line_count: 31262696
-  md5: h8tP1Mo//quIIWb4LJmdmw==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259982_2.fastq.gz
-  unzipped_line_count: 31262696
-  md5: wRgqxGSZ5m1SRWBVuzCrEQ==
-  wasabi: {}
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259983_1.fastq.gz
   unzipped_line_count: 47534752
   md5: mOzhU6Y71E7/3lbOI3vfvg==
@@ -31881,22 +31745,6 @@ files:
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259987_2.fastq.gz
   unzipped_line_count: 13214204
   md5: 8U97RTuMrcPxt/QaJABmPg==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259988_1.fastq.gz
-  unzipped_line_count: 37597448
-  md5: YvcOuobQLkqy160SwYys9g==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259988_2.fastq.gz
-  unzipped_line_count: 37597448
-  md5: xFwGluBbYTp1juWsEaCffA==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259989_1.fastq.gz
-  unzipped_line_count: 44761068
-  md5: wkmyJnR9GQMXRRcPQip40Q==
-  wasabi: {}
-- path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259989_2.fastq.gz
-  unzipped_line_count: 44761068
-  md5: ptkYnfCRjCmkn1waH49HKQ==
   wasabi: {}
 - path: data/hudson_alpha_library/haib17DB4959/H3MGVCCXY/haib17DB4959_H3MGVCCXY_SL259990_1.fastq.gz
   unzipped_line_count: 55654432
