@@ -1,0 +1,37 @@
+How MetaSUB's Data is Stored
+============================
+
+File and Naming Structure
+-------------------------
+
+All source files (raw, unedited fastqs) are stored in a 'library' directory. Each source file receives a globally unique name based on an ID shared only with its mate pair (if applicable). 
+
+The unique names used to store source files typically are not scientifically useful. *This is an intentional design decision and will not be changed*. Throughout the course of the MetaSUB project there have been instances where a single sample was split over multiple files, where samples were assigned incorrect names, and where names were simply missing. Using a globally available and unique name obviates the need to perform time consuming and error prone migrations.
+
+*Scientifically relevant names will still be supported*. However, these names will be maintained by symlinking to source files rather than storing directly. Map files from unique source names to relevant names will also be available.
+
+The scientifically relevant name format is as follows `<metasub project id>-<city code>-[<optional subproject id>]<sample number>` (e.g. CSD16-OFA-070 or CSD17-OSL-AS16). Valid project codes, city codes, and subproject codes are listed in the metadata git repo. Since samples may be split over multiple source files files with metasub names will also include the source filename with the format `<metasub name>.<source id>.<ext>`.
+
+Hudson Alpha Files
+------------------
+
+The vast majority of MetaSUB samples were sequenced at Hudson Alpha. These are stored in a directory named `hudson_alpha_library`.
+
+Each sample sequenced at Hudson Alpha was sequenced as part of a hudson alpha project (e.g. haib17CEM5241) on a particular flowcell (e.g. HMCMJCCXY). 
+
+Each tube we sent to Hudson Alpha received an 'SL' name (e.g. SL336201), usually an SL name shows up in exactly one flowcell in one project but a few SL names (288 as of aug 22, 2018) appear multiple times in different flowcells (unclear if the same SL name can occur across hudson alpha projects).
+
+To avoid collisions each source file is stored with a name in this format `<hudson alpha project id>_<flowcell number>_<SL number>_[1,2].fastq.gz` (e.g. haib18CEM5453_HMC2KCCXY_SL336821). This is referred to as the hudson alpha unique id (`hauniq` for short)
+
+For convenience the `hudson_alpha_library` directory is subdivided into directories for hudson alpha projects which are themselves divided into directories for flowcells. As such the complete path for a given file looks like this `hudson_alpha_library/haib18CEM5453/HMC2KCCXY/haib18CEM5453_HMC2KCCXY_SL336821.fastq.gz`.
+
+Source files from the same sample are never concatenated in the standard processing pipeline. This is because 1) such instances are rare, 2) technical replicates provide useful quality control, 3) managing such events is likely to lead to larger issues with organization. Of course custom analyses may concatenate as they see fit.
+
+Other Files
+-----------
+
+Some MetaSUB data was not sequenced by hudson alpha. In this case samples are assigned a unique identifier with a similar structure to the `hauniq` id. Namely `<project id>.<batch identifier>.<sample id>`. Fastq files are named analagously. These samples are stored in the directory `other_sample_library`. 
+
+Examples include:
+`pilot_HongKong-China_HKMTR1001AM.fastq.gz`
+`sossowski_BarcelonaNov2018_CSD16-BCN-001-29786-ACTCGCTA-TCGACTAG_1.fastq.gz`
