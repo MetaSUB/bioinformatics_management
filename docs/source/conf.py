@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MetaSUB Bioinformatics'
+project = 'MetaSUB Data'
 copyright = '2019, David Danko, The MetaSUB Consortium'
 author = 'David Danko, The MetaSUB Consortium'
 

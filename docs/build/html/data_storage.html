@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Data Storage &#8212; MetaSUB Data 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Governance" href="versioning.html" />
+    <link rel="prev" title="Data Availability and Storage" href="data_availability.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="data-storage">
+<h1>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="file-and-naming-structure">
+<h2>File and Naming Structure<a class="headerlink" href="#file-and-naming-structure" title="Permalink to this headline">¶</a></h2>
+<p>All source files (raw, unedited fastqs) are stored in a ‘library’ directory. Each source file receives a globally unique name based on an ID shared only with its mate pair (if applicable).</p>
+<p>The unique names used to store source files typically are not scientifically useful. <em>This is an intentional design decision and will not be changed</em>. Throughout the course of the MetaSUB project there have been instances where a single sample was split over multiple files, where samples were assigned incorrect names, and where names were simply missing. Using a globally available and unique name obviates the need to perform time consuming and error prone migrations.</p>
+<p><em>Scientifically relevant names will still be supported</em>. However, these names will be maintained by symlinking to source files rather than storing directly. Map files from unique source names to relevant names will also be available.</p>
+<p>The scientifically relevant name format is as follows <cite>&lt;metasub project id&gt;-&lt;city code&gt;-[&lt;optional subproject id&gt;]&lt;sample number&gt;</cite> (e.g. CSD16-OFA-070 or CSD17-OSL-AS16). Valid project codes, city codes, and subproject codes are listed in the metadata git repo. Since samples may be split over multiple source files files with metasub names will also include the source filename with the format <cite>&lt;metasub name&gt;.&lt;source id&gt;.&lt;ext&gt;</cite>.</p>
+</div>
+<div class="section" id="hudson-alpha-files">
+<h2>Hudson Alpha Files<a class="headerlink" href="#hudson-alpha-files" title="Permalink to this headline">¶</a></h2>
+<p>The vast majority of MetaSUB samples were sequenced at Hudson Alpha. These are stored in a directory named <cite>hudson_alpha_library</cite>.</p>
+<p>Each sample sequenced at Hudson Alpha was sequenced as part of a hudson alpha project (e.g. haib17CEM5241) on a particular flowcell (e.g. HMCMJCCXY).</p>
+<p>Each tube we sent to Hudson Alpha received an ‘SL’ name (e.g. SL336201), usually an SL name shows up in exactly one flowcell in one project but a few SL names (288 as of aug 22, 2018) appear multiple times in different flowcells (unclear if the same SL name can occur across hudson alpha projects).</p>
+<p>To avoid collisions each source file is stored with a name in this format <cite>&lt;hudson alpha project id&gt;_&lt;flowcell number&gt;_&lt;SL number&gt;_[1,2].fastq.gz</cite> (e.g. haib18CEM5453_HMC2KCCXY_SL336821). This is referred to as the hudson alpha unique id (<cite>hauniq</cite> for short)</p>
+<p>For convenience the <cite>hudson_alpha_library</cite> directory is subdivided into directories for hudson alpha projects which are themselves divided into directories for flowcells. As such the complete path for a given file looks like this <cite>hudson_alpha_library/haib18CEM5453/HMC2KCCXY/haib18CEM5453_HMC2KCCXY_SL336821.fastq.gz</cite>.</p>
+<p>Source files from the same sample are never concatenated in the standard processing pipeline. This is because 1) such instances are rare, 2) technical replicates provide useful quality control, 3) managing such events is likely to lead to larger issues with organization. Of course custom analyses may concatenate as they see fit.</p>
+</div>
+<div class="section" id="other-files">
+<h2>Other Files<a class="headerlink" href="#other-files" title="Permalink to this headline">¶</a></h2>
+<p>Some MetaSUB data was not sequenced by hudson alpha. In this case samples are assigned a unique identifier with a similar structure to the <cite>hauniq</cite> id. Namely <cite>&lt;project id&gt;.&lt;batch identifier&gt;.&lt;sample id&gt;</cite>. Fastq files are named analagously. These samples are stored in the directory <cite>other_sample_library</cite>.</p>
+<p>Examples include:
+<cite>pilot_HongKong-China_HKMTR1001AM.fastq.gz</cite>
+<cite>sossowski_BarcelonaNov2018_CSD16-BCN-001-29786-ACTCGCTA-TCGACTAG_1.fastq.gz</cite></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MetaSUB Data</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_availability.html">Data Availability and Storage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Storage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-and-naming-structure">File and Naming Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hudson-alpha-files">Hudson Alpha Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-files">Other Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="versioning.html">Data Governance</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="data_availability.html" title="previous chapter">Data Availability and Storage</a></li>
+      <li>Next: <a href="versioning.html" title="next chapter">Data Governance</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, David Danko, The MetaSUB Consortium.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/data_storage.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

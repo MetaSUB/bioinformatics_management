@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Data Governance &#8212; MetaSUB Data 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Data Storage" href="data_storage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="data-governance">
+<h1>Data Governance<a class="headerlink" href="#data-governance" title="Permalink to this headline">¶</a></h1>
+<p>This page outlines how data is handled at MetaSUB. It is concerned twith the practical issues of maintaining a large database for a scientific consortium.</p>
+<p>This section details:
+-   How version numbers are assigned for MetaSUB data
+-   The management principles guiding new releases
+-   Specific policies for data lifecycle management</p>
+<div class="section" id="principles-for-high-quality-data">
+<h2>Principles for High Quality Data<a class="headerlink" href="#principles-for-high-quality-data" title="Permalink to this headline">¶</a></h2>
+<p>Correctness &gt; Stability &gt; Convenience</p>
+<div class="section" id="correctness">
+<h3>Correctness<a class="headerlink" href="#correctness" title="Permalink to this headline">¶</a></h3>
+<p>It is critical that the information we provide be correct, this trumps all other considerations. Even though it’s embarrasing to admit a mistake it’s better than allowing it to propagate. Whenever possible formats should be general such that correcting a mistake does not force programs to be rebuilt, however if it is not possible to correct a mistake without changing a format the format should be changed.</p>
+</div>
+<div class="section" id="stability">
+<h3>Stability<a class="headerlink" href="#stability" title="Permalink to this headline">¶</a></h3>
+<p>Every time something is released users can build off of it. If the format of what is released changes users must modify their work. As such it is more important to maintain existing formats than it is to make formats easy to use. Appending new items is typically fine and should be preffered to editing existing items.</p>
+</div>
+<div class="section" id="convenience">
+<h3>Convenience<a class="headerlink" href="#convenience" title="Permalink to this headline">¶</a></h3>
+<p>Releases should be as easy to access as possible. Data formats should be clear and standard and tooling should be provided for easy access. Releases should aim for a balance between useful information and clutter. Releases should always include a README explaining how the release work.</p>
+</div>
+</div>
+<div class="section" id="versioning">
+<h2>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h2>
+<p>We use a form of Semantic Versioning meaning that each release is versioned by a triple of the form v1.2.3. These numbers are reffered to as major.minor.patch. Releases should contain documentation specifying what is in the release and the version of the release.</p>
+<p>Changes to the documentation that improve clarity do not require a version bump. All changes that modify the version should include a changelog.</p>
+<p>Patch versions are used to guarantee correctness. They can be used if the following criteria are met:
+- A change corrects a specification error [1] without changing format
+- A change adds a new object that does not interfere with old objects</p>
+<p>Minor versions are used to add new data and guarantee correctness. They can be used if the following criteria is met:
+- A change corrects a data error [2] without <em>substantially</em> changing format
+- A change adds new data (append only). Note that changing a value from &lt;null&gt; -&gt; &lt;not null&gt; for an existing sample is considered a patch.</p>
+<p>Major versions cover any and all changes not covered by Minor and Patch updates. Principally these are used for format changes or to reflect major changes in underlying sources.</p>
+<p>[1] Defined as an error where the specification called for something other than what was present
+[2] Defined as an error where the data given was incorrect, even if it was properly formatted</p>
+</div>
+<div class="section" id="data-flow">
+<h2>Data Flow<a class="headerlink" href="#data-flow" title="Permalink to this headline">¶</a></h2>
+<p>Data follows a defined path from induction to release.</p>
+<p>Induction -&gt; Raw Data -&gt; Processed Data -&gt; Tabulated Data -&gt; Release</p>
+<div class="section" id="data-induction-policy">
+<h3>Data Induction Policy<a class="headerlink" href="#data-induction-policy" title="Permalink to this headline">¶</a></h3>
+<p>Data Induction should follow these steps:
+1. Make a staging directory <cite>staging/&lt;proj&gt;/&lt;flowcell&gt;</cite> (bash)
+2. download unconcatenated files to staging dir (H.A. utils)
+3. concatenate files (H.A. utils)
+4. rename files to HA-Uniq IDs (metasub utils)
+5. move to main data dir (bash)
+6. health check files and add to file spec (llps)
+7. upload files to wasabi (llps)</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MetaSUB Data</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_availability.html">Data Availability and Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Governance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#principles-for-high-quality-data">Principles for High Quality Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#versioning">Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-flow">Data Flow</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="data_storage.html" title="previous chapter">Data Storage</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, David Danko, The MetaSUB Consortium.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/versioning.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
