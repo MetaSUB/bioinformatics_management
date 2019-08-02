@@ -22,13 +22,6 @@ We use a number of programs for bioinformatics at MetaSUB. Everyone in MetaSUB i
 
 [Main Paper Figures](https://github.com/MetaSUB/main_paper_figures), Code used to build figures in the MetaSUB manuscript
 
-### Private
-
-_Figure Generators_, code to generate figures and tables for publication and exploration. Available as a private GitHub repo
-
-_MetaSUB Data Packet_, raw data tables from running the CAP on MetaSUB samples. Available on Dropbox and as a private GitHub repo.
-
-
 ### Utilities
 
 [Bioinformatics Management, Policies, and Communications](https://github.com/MetaSUB/bioinformatics_management)
