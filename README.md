@@ -10,6 +10,8 @@ We use a number of programs for bioinformatics at MetaSUB. Everyone in MetaSUB i
 
 ### Public
 
+[MetaSUB Data Packet v1.2.0](https://s3.wasabisys.com/metasub/data_packets/metasub_data_packet_v1_2.tar.gz)
+
 [Metadata for Sequenced Samples](https://github.com/dcdanko/MetaSUB-metadata), A fully reproducible metadata table for all sequenced samples.
 
 [The Core Analysis Pipeline](https://github.com/MetaSUB/MetaSUB_CAP), A pipeline for analysis of short read metagenomic data.
@@ -17,6 +19,8 @@ We use a number of programs for bioinformatics at MetaSUB. Everyone in MetaSUB i
 [The Core QC Pipeline](https://github.com/MetaSUB/MetaSUB_QC_Pipeline), A pipeline to perform quality control of samples.
 
 [Data Table Generator](https://github.com/dcdanko/capalyzer), A tool to build data tables from the output of the CAP
+
+[Main Paper Figures](https://github.com/MetaSUB/main_paper_figures), Code used to build ifures in the MetaSUB manuscript
 
 ### Private
 
