@@ -20,7 +20,7 @@ We use a number of programs for bioinformatics at MetaSUB. Everyone in MetaSUB i
 
 [Data Table Generator](https://github.com/dcdanko/capalyzer), A tool to build data tables from the output of the CAP
 
-[Main Paper Figures](https://github.com/MetaSUB/main_paper_figures), Code used to build ifures in the MetaSUB manuscript
+[Main Paper Figures](https://github.com/MetaSUB/main_paper_figures), Code used to build figures in the MetaSUB manuscript
 
 ### Private
 
