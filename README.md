@@ -10,7 +10,7 @@ We use a number of programs for bioinformatics at MetaSUB. Everyone in MetaSUB i
 
 ### Public
 
-[MetaSUB Data Packet v1.2.0](https://s3.wasabisys.com/metasub/data_packets/metasub_data_packet_v1_2.tar.gz)
+[MetaSUB Data Packet v1.2.0](https://s3.wasabisys.com/metasub/data_packets/metasub_data_packet_v1_2.tar.gz), Analyzed data tables for downstream analysis
 
 [Metadata for Sequenced Samples](https://github.com/dcdanko/MetaSUB-metadata), A fully reproducible metadata table for all sequenced samples.
 
